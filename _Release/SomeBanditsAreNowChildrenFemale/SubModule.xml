@@ -1,0 +1,31 @@
+<Module>
+	<Name value="SomeBanditsAreNowChildrenFemale"/>
+	<Id value="SomeBanditsAreNowChildrenFemale"/>
+	<Version value="v1.0.2"/>
+	<SingleplayerModule value="true"/>
+  <MultiplayerModule value="false"/>
+  <DependedModules>
+    <DependedModule Id="Native" />
+    <DependedModule Id="SandBoxCore" />
+    <DependedModule Id="Sandbox" />
+    <DependedModule Id="CustomBattle" />
+    <DependedModule Id="StoryMode" />
+    <DependedModule Id="SomeBanditsAreNowChildren" />
+    <DependedModule Id="T8FemaleTroopsReborn" />
+  </DependedModules>
+
+  <Xmls>
+
+    	<XmlNode>                
+		<XmlName id="NPCCharacters" path="ChildrenBanditsFemale"/>
+		<IncludedGameTypes>
+			<GameType value = "Campaign"/>
+       		<GameType value = "Sandbox"/>
+        		<GameType value = "SandBoxCore"/>
+        		<GameType value = "CampaignStoryMode"/>
+        		<GameType value = "CustomGame"/>
+		</IncludedGameTypes>
+	</XmlNode>
+
+  </Xmls>
+</Module>

@@ -1,0 +1,42 @@
+<Module>
+	<Name value="SomeBanditsAreNowChildren"/>
+	<Id value="SomeBanditsAreNowChildren"/>
+	<Version value="v1.0.2"/>
+	<SingleplayerModule value="true"/>
+  <MultiplayerModule value="false"/>
+  <DependedModules>
+    <DependedModule Id="Native" />
+    <DependedModule Id="SandBoxCore" />
+    <DependedModule Id="Sandbox" />
+    <DependedModule Id="CustomBattle" />
+    <DependedModule Id="StoryMode" />
+    <DependedModule Id="Bannerlord.Harmony"/>
+    <DependedModule Id="Bannerlord.MBOptionScreen"/>
+    <DependedModule Id="Children_Are_No_Longer_Invulnerable" />
+  </DependedModules>
+  <SubModules>
+	<SubModule>
+             <Name value="Some Bandits Are Now Children"/>
+             <DLLName value="Some Bandits Are Now Children.dll"/>
+             <SubModuleClassType value="Some_Bandits_Are_Now_Children.SubModule"/>
+             <Tags>
+                 <Tag key="DedicatedServerType" value="none" />
+                 <Tag key="IsNoRenderModeElement" value="false" />
+             </Tags>
+      </SubModule>
+  </SubModules>
+  <Xmls>
+
+    	<XmlNode>                
+		<XmlName id="NPCCharacters" path="ChildrenBandits"/>
+		<IncludedGameTypes>
+			<GameType value = "Campaign"/>
+       		<GameType value = "Sandbox"/>
+        		<GameType value = "SandBoxCore"/>
+        		<GameType value = "CampaignStoryMode"/>
+        		<GameType value = "CustomGame"/>
+		</IncludedGameTypes>
+	</XmlNode>
+
+  </Xmls>
+</Module>
